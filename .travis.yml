@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+cache:
+  directories:
+  - node_modules
+install:
+- npm install
+script:
+- hexo clean
+- hexo g
+after_script:
+- cd ./public
+- git init
+- git config user.name "DLing"
+- git config user.email "2836704243@qq.com"
+- git add .
+- git commit -m "automatic code deployment"
+- git push --force --quiet "https://${blog_token}@${GH_REF}" master:gh-pages
+branches:
+  only:
+  - master
+env:
+  global:
+  - GH_REF: github.com/YuliaScott/blog.git
