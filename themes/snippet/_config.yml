@@ -28,9 +28,9 @@ favicon: /favicon.ico
 rss: /atom.xml
 
 ## Carousel
-carousel:
-  img: './img/head-img.jpg'
-  url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
+# carousel:
+  # img: './img/head-img.jpg'
+  # url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
 
 # 各个小工具的设置
 
@@ -68,19 +68,16 @@ notification: |-
 social:
  - name: Github
    icon: git
-   href: //github.com/shenliyang
- - name: 邮箱
-   icon: envelope-o
-   href: mailto:snippet@91h5.cc
- - name: 联系QQ
-   icon: qq
-   href: /
- - name: 微信
-   icon: weixin
-   href: /
- - name: QQ群
-   icon: users
-   href: /
+   href: //github.com/YuliaScott
+ - name: Yuque
+   icon: git
+   href: //yuque.com
+ - name: Juejin
+   icon: git
+   href: //juejin.cn
+ - name: Zhihu
+   icon: git
+   href: //zhihu.com
  - name: RSS
    icon: feed
    href: /atom.xml
