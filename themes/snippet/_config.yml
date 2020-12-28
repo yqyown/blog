@@ -28,21 +28,21 @@ favicon: /favicon.ico
 rss: /atom.xml
 
 ## Carousel
-# carousel:
-  # img: './img/head-img.jpg'
-  # url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
+carousel:
+  img: './img/head-img.jpg'
+  url: 'https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=xs0pypd2'
 
 # 各个小工具的设置
 
 ## widgets
 widgets:
   - search
-  - notification
-  - social
   - category
   - archive
   - tagcloud
-  - friends
+  - social
+ # - notification
+ # - friends
 
 
 ## 搜索
@@ -67,17 +67,11 @@ notification: |-
 ## 社交设置
 social:
  - name: Github
-   icon: git
+   icon: github
    href: //github.com/YuliaScott
- - name: Yuque
-   icon: git
-   href: //yuque.com
- - name: Juejin
-   icon: git
-   href: //juejin.cn
- - name: Zhihu
-   icon: git
-   href: //zhihu.com
+ - name: Sina
+   icon: weibo
+   href: //weibo.com/u/3661615330
  - name: RSS
    icon: feed
    href: /atom.xml
