@@ -3,6 +3,8 @@ node_js: stable
 cache:
   directories:
   - node_modules
+before_install:
+- npm install hexo-cli -g
 install:
 - npm install
 script:
