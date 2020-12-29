@@ -9,16 +9,16 @@ menu:
   url: /
   icon:
 - page: 编程语言
-  url: /blog/categories/编程语言/
+  url: /categories/编程语言/
   icon:
 - page: 技术读物
-  url: /blog/categories/技术读物/
+  url: /categories/技术读物/
   icon:
 - page: 工具教程
-  url: /blog/categories/工具教程/
+  url: /categories/工具教程/
   icon:
 - page: 时间轴
-  url: /blog/archives/
+  url: /archives/
   icon:
 
 ## favicon
@@ -36,7 +36,7 @@ carousel:
 
 ## widgets
 widgets:
- # - search
+  - search
   - category
   - archive
   - tagcloud
@@ -47,7 +47,7 @@ widgets:
 
 ## 搜索
 jsonContent:
-  searchLocal: false
+  searchLocal: true
   searchGoogle: false
   posts:
     title: true
@@ -118,7 +118,7 @@ branding: '用积极的事情把时间填满'
 
 ## 设置banner背景图片
 banner:
-    img: http://snippet.shenliyang.com/img/banner.jpg
+    img: /img/banner.jpg
 
 ## 首页列表底部面板
 homePanel: true
