@@ -9,16 +9,16 @@ menu:
   url: /
   icon:
 - page: 编程语言
-  url: /categories/编程语言/
+  url: /blog/categories/编程语言/
   icon:
 - page: 技术读物
-  url: /categories/技术读物/
+  url: /blog/categories/技术读物/
   icon:
-- page: 工具&教程
-  url: /categories/工具&教程/
+- page: 工具教程
+  url: /blog/categories/工具教程/
   icon:
 - page: 时间轴
-  url: /archives/
+  url: /blog/archives/
   icon:
 
 ## favicon
