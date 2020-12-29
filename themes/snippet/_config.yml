@@ -8,14 +8,14 @@ menu:
 - page: home
   url: /
   icon:
-- page: 前端
-  url: /categories/前端/
+- page: 编程语言
+  url: /categories/编程语言/
   icon:
-- page: 后端
-  url: /categories/后端/
+- page: 技术读物
+  url: /categories/技术读物/
   icon:
-- page: 工具
-  url: /categories/工具/
+- page: 工具&教程
+  url: /categories/工具&教程/
   icon:
 - page: 时间轴
   url: /archives/
@@ -36,7 +36,7 @@ carousel:
 
 ## widgets
 widgets:
-  - search
+ # - search
   - category
   - archive
   - tagcloud
@@ -47,7 +47,7 @@ widgets:
 
 ## 搜索
 jsonContent:
-  searchLocal: true
+  searchLocal: false
   searchGoogle: false
   posts:
     title: true
@@ -69,9 +69,15 @@ social:
  - name: Github
    icon: github
    href: //github.com/YuliaScott
- - name: Sina
-   icon: weibo
-   href: //weibo.com/u/3661615330
+ - name: Juejin
+   icon: 
+   href: //juejin.cn
+ - name: Yuque
+   icon: 
+   href: //yuque.com
+ - name: Zhihu
+   icon: 
+   href: //zhihu.com
  - name: RSS
    icon: feed
    href: /atom.xml
@@ -108,7 +114,7 @@ links:
 # 主题自定义个性化配置
 
 ## 网站宣传语
-branding:
+branding: '用积极的事情把时间填满'
 
 ## 设置banner背景图片
 banner:
@@ -213,8 +219,8 @@ uyan:
 
 ## 网站访客统计
 visit_counter:
-   site: false
-   page: false
+   site: true
+   page: true
 
 ## 网站访问统计分析
 
@@ -237,7 +243,7 @@ baidu_site_verification:
 baidu_push: false
 
 #网站主题配置
-since: 2017
+since: 2020
 beian: 
 robot: 'all' ### 控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.3
