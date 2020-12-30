@@ -334,7 +334,7 @@ pre {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    background-image: -webkit-linear-gradient(left, #cddc39, #e67e22 25%, #cddc39 50%, #e67e22 75%, #cddc39) !important;
+    background-image: -webkit-linear-gradient(left, #f0cead, #e67e22 25%, #f0cead 50%, #e67e22 75%, #f0cead) !important;
     -webkit-text-fill-color: transparent !important;
     -webkit-background-clip: text !important;
     background-size: 200% 100% !important;
