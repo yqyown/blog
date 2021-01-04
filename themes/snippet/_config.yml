@@ -162,15 +162,15 @@ reward:
 
 ## 主题评论
 
-## Valine评论
+## Valine评论 https://valine.js.org
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
-   placeholder: 说点什么吧
-   notify: false
-   verify: true
-   avatar: mm
+   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz #Leancloud应用的appId
+   appKey: erIpQac4azoCmgfBB7Dl9maa #Leancloud应用的appKey
+   placeholder: 说点什么吧 #评论框占位符
+   notify: false #评论回复提醒
+   verify: true #验证码
+   avatar: mm #评论列表头像
    meta: nick,mail
    pageSize: 10
 
