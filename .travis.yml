@@ -9,7 +9,7 @@ install:
 - npm install
 script:
 - hexo clean
-- hexo g
+- hexo g #把Sources文件夹下面的md生成静态html保存到Public
 after_script:
 - cd ./public
 - git init
