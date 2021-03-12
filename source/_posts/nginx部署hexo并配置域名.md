@@ -98,13 +98,13 @@ server {
 }
 ```
 
-<!-- ————————————————————————————————————————————————————————————————————————————————
+————————————————————————————————————————————————————————————————————————————————
 # 二、配置域名解析
 
 
-![cloudflare配置域名解析](https://cdn.jsdelivr.net/gh/YuliaScott/blogpic/img/.png)
+![cloudflare配置域名解析](https://cdn.jsdelivr.net/gh/YuliaScott/blogpic/img/cloudflareDNS.png)
 <br />
-输入<span>www.example.com</span>或example.com或blog.example.com，可同时访问。 -->
+输入<span>www.example.com</span>或example.com或blog.example.com，可同时访问。
 
 
 ————————————————————————————————————————————————————————————————————————————————
