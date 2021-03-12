@@ -12,7 +12,7 @@ categories: 工具教程
 # ###写在前面
 1. 本文的内容全部基于《搭建个人博客网站》
 2. 为确保网站运行正常，除了基于github外，又使用Nginx服务器部署，网站内容完全相同
-3. Nginx服务器绑定的域名是www.example.com<span>，基于github绑定的域名是blog.example.com，并且都支持https（本文不涉及cloudflare如何申请https密钥和github如何设置使用https）</span>
+3. Nginx服务器绑定的域名是www\.example.com，基于github绑定的域名是blog.example.com，并且都支持https（本文不涉及cloudflare如何申请https密钥和github如何设置使用https）
 4. 先前Nginx服务器运行在腾讯云 window server 2019（nginx为1.18.0稳定版），且阿里云购买的域名，域名解析也在阿里云，后来网站无法运行，提示需要域名备案
 5. 域名备案过程中，提示“备案和云服务器提供商必须一致”。有两种方式解决：1）购买腾讯云服务器，平时服务器使用不多，不打算购买；2）将阿里云域名转入腾讯云，不过域名需强制续费一年，但我使用的是朋友的腾讯云，备案实名认证多少有些不方便。最后我选择在GoDaddy购买域名，cloudflare进行域名解析，与此同时，我有一台VPS服务器(购买的是伦敦的，ubuntu)
 6. Nginx服务器运行在ubuntu，静态页面保存在根目录/web/public目录
@@ -104,7 +104,7 @@ server {
 
 ![cloudflare配置域名解析](https://cdn.jsdelivr.net/gh/YuliaScott/blogpic/img/cloudflareDNS.png)
 <br />
-输入<span>www.example.com</span>或example.com或blog.example.com，可同时访问。
+输入www\.example.com或example.com或blog.example.com，可同时访问。
 
 
 ————————————————————————————————————————————————————————————————————————————————
