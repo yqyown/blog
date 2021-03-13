@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="木筏的博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="https://yuliascott.github.io/blog">
+    <!--SEO-->
+
+<meta name="keywords" content="Hexo,Travis CI,Github" />
+
+
+<meta name="description" content="使用Hexo搭建博客网站，Travis CI自动集成。使用Github pages搭建Hexo静态博客网站，Hexo将编写的md文档解析渲染成Html网页，通过git推送到github，Trav..." />
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+<title>
+    
+    搭建个人博客网站 |
+    
+    木筏的博客
+</title>
+
+<link rel="alternate" href="/atom.xml" title="木筏的博客" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash.css">
+
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header"  style="background-image:url(
+    /img/banner.jpg)"
+     >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title='木筏'>
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <h2>
+                用积极的事情把时间填满
+            </h2>
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                    <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="https://yuliascott.github.io/blog">
+                        木筏的博客
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/"><i class="fa "></i>
+                                首页</a>
+                            </li>
+                            
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"><i class="fa "></i>
+                                编程语言</a>
+                            </li>
+                            
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/%E6%8A%80%E6%9C%AF%E8%AF%BB%E7%89%A9/"><i class="fa "></i>
+                                技术读物</a>
+                            </li>
+                            
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"><i class="fa "></i>
+                                工具教程</a>
+                            </li>
+                            
+                            <li role="presentation" class="text-center">
+                                <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                            </li>
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="搭建个人博客网站">
+            
+            搭建个人博客网站
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/">工具教程</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-none-link" href="/tags/Github/" rel="tag">Github</a> <a class="tag-none-link" href="/tags/Hexo/" rel="tag">Hexo</a> <a class="tag-none-link" href="/tags/Travis-CI/" rel="tag">Travis CI</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/12/28</span>
+    </span>
+    
+    <span class="fa-wrap">
+        <i class="fa fa-eye"></i>
+        <span id="busuanzi_value_page_pv"></span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <p>使用Hexo搭建博客网站，Travis CI自动集成。<br><br /><br>使用Github pages搭建Hexo静态博客网站，Hexo将编写的md文档解析渲染成Html网页，通过git推送到github，Travis CI自动检测提交的内容，根据.travis.yml自动生成、部署静态网页。<br><br /><br>参考链接：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv2884489%EF%BC%88%E6%96%87%E5%AD%97%EF%BC%89">https://www.bilibili.com/read/cv2884489（文字）</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av55852851/?p=1%EF%BC%88%E8%A7%86%E9%A2%91%EF%BC%89">https://www.bilibili.com/video/av55852851/?p=1（视频）</a><br><br /><br /></p>
+<h1 id="搭建思路"><a href="#搭建思路" class="headerlink" title="### 搭建思路"></a>### 搭建思路</h1><p>首先hexo博客的源码放在master分支上，生成的静态页面放在gh-pages分支上。当然也可以新建两个仓库，一个仓库放hexo源码，一个仓库放生成的静态页面。<br><br /></p>
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="### 写在前面"></a>### 写在前面</h1><p>所需环境&amp;工具：</p>
+<ul>
+<li>node</li>
+<li>git</li>
+<li>Typora（编写md文章）<br />
+
+</li>
+</ul>
+<p><em>注：本文不涉及安装node环境和git工具；本文不涉及如何更换snippet主题；</em><br><br /></p>
+<h1 id="一、创建token"><a href="#一、创建token" class="headerlink" title="一、创建token"></a>一、创建token</h1><p>在github上创建token：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/YuliaScott/blogpic/img/githubtoken.png" alt="github创建token"><br><br /><br><strong><font color=red>创建完成后，一定要复制生成的token！！！</font></strong></p>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="二、创建hexo"><a href="#二、创建hexo" class="headerlink" title="二、创建hexo"></a>二、创建hexo</h1><p>官网链接：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a><br><br /></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="三、创建repository"><a href="#三、创建repository" class="headerlink" title="三、创建repository"></a>三、创建repository</h1><p>在github上创建仓库(仓库名称blog，<font color=red>不需要以github.io结尾</font>)，提交代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">git remote add origin https://github.com/xxxxx/xxxxxx.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="四、创建branch"><a href="#四、创建branch" class="headerlink" title="四、创建branch"></a>四、创建branch</h1><p>新建gh-pages分支(注意：<font color=red>gh-pages分支名，不可随意更改</font>)：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b gh-pages</span><br><span class="line">除了.git文件夹删除所有文件</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;gh-pages first commit&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//至此，源码分支和gh-pages分支已经全部弄好了。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">切回master分支：git checkout master</span><br><span class="line"></span><br><span class="line">切回master分支后，提交代码：1）git push origin master  2）git push origin gh-pages</span><br></pre></td></tr></table></figure>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="五、配置travis-CI"><a href="#五、配置travis-CI" class="headerlink" title="五、配置travis CI"></a>五、配置travis CI</h1><p>打开Travis CI官网，用github来登陆，勾上对应的仓库：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/YuliaScott/blogpic/img/travisci.png" alt="travisci选择仓库"><br><br /><br>点击“settings”，添加<code>Environment Variables</code>，在下方的Name里填入你自定义的名字（如hexoblog_token），右边的value填入github上申请的token，然后点击add</p>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="六、配置travis-yml"><a href="#六、配置travis-yml" class="headerlink" title="六、配置travis.yml"></a>六、配置travis.yml</h1><p>在项目根目录下新建文件.travis.yml，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">language: node_js</span><br><span class="line">node_js: stable  <span class="comment">#要安装的node版本为当前的稳定版</span></span><br><span class="line">cache:</span><br><span class="line">  directories:</span><br><span class="line">  - node_modules  <span class="comment">#要缓存的文件夹</span></span><br><span class="line">install:</span><br><span class="line"> <span class="comment"># - npm install hexo-cli -g</span></span><br><span class="line">  - npm install</span><br><span class="line">script:</span><br><span class="line">  - hexo clean  <span class="comment">#清除</span></span><br><span class="line">  - hexo g  <span class="comment">#生成</span></span><br><span class="line">after_script:  <span class="comment">#最后执行的命令</span></span><br><span class="line">  - <span class="built_in">cd</span> ./public</span><br><span class="line">  - git init</span><br><span class="line">  - git config user.name <span class="string">&quot;your_name&quot;</span></span><br><span class="line">  - git config user.email <span class="string">&quot;your_email@example.com&quot;</span></span><br><span class="line">  - git add . </span><br><span class="line">  - git commit -m <span class="string">&quot;automatic code deployment&quot;</span></span><br><span class="line">  - git push --force --quiet <span class="string">&quot;https://<span class="variable">$&#123;hexoblog_token&#125;</span>@<span class="variable">$&#123;GH_REF&#125;</span>&quot;</span> master:gh-pages  <span class="comment">#hexoblog_token与travis ci设置的环境变量名相同</span></span><br><span class="line">branches:</span><br><span class="line">  only:</span><br><span class="line">   - master <span class="comment">#触发持续集成的分支</span></span><br><span class="line">env:</span><br><span class="line"> global:</span><br><span class="line">  - GH_REF: github.com/xxxxxx/xxx.git <span class="comment">#就是github上存放博客最终文件的仓库地址末尾加上.git</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>添加完成，切换到master分支，提交代码<br>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="七、新建md文章"><a href="#七、新建md文章" class="headerlink" title="七、新建md文章"></a>七、新建md文章</h1><p>执行hexo命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n <span class="string">&#x27;article&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>执行完上面的命令，在文件夹source里面的_posts文件夹里面找到刚刚新建的article.md，编辑内容，提交代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: <span class="string">&#x27;xxxx&#x27;</span></span><br><span class="line">date: xxxx</span><br><span class="line">tags: <span class="string">&#x27;xxxx&#x27;</span>  <span class="comment">#[&#x27;xxxx1&#x27;,&#x27;xxxx2&#x27;,&#x27;xxxx3&#x27;...]</span></span><br><span class="line">categories: <span class="string">&#x27;xxxxxx&#x27;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>打开travis ci 官网，在监控的仓库中找到Build History查看提交的状态。<br>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="八、图床神器PicGo"><a href="#八、图床神器PicGo" class="headerlink" title="八、图床神器PicGo"></a>八、图床神器PicGo</h1><p>Markdown语法的特殊性使得图片的插入到文章尤为困难，本文由此而来。</p>
+<p>所谓图床工具，就是自动把本地图片转换成链接的一款工具，支持七牛云，腾讯云COS，又拍云，GitHub，阿里云 OSS，SM.MS，Imgur 等8种常用图床。<br><br /><br>安装包下载：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">https://github.com/Molunerfinn/PicGo</a></p>
+<ul>
+<li><em>windows 选择 exe</em></li>
+<li><em>mac 选择 dmg</em></li>
+<li><em>linux选择 AppImage</em></li>
+</ul>
+<p>注：mac 用户，直接使用brew cask来安装PicGo，简单方便：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --cask picgo</span><br></pre></td></tr></table></figure>
+<br />
+我使用的是Github图床：<br />
+===》登录Github创建Repository(如blogpic)，设置为public；<br />
+===》创建token，填写描述，选择repo，然后点击Generate token按钮，创建完成后复制保存；<br />
+===》安装配置PicGo；<br />
+===》上传图片，Github仓库查看图片；
+<br /><br />
+
+<blockquote>
+<p>安装配置PicGo:</p>
+<ol>
+<li>设定仓库名的时候，是按照”账户名/仓库名”的格式填写；</li>
+<li>分支名统一填写”master”；</li>
+<li>将github创建的Token粘贴到这里；</li>
+<li>存储的路径如图，会在repository下创建一个”img”文件夹；</li>
+<li>自定义域名的作用是，在上传图片成功后，PicGo会将”自定义域名+上传的图片名”生成的访问链接放到剪切板：https://raw.githubusercontent.com/用户名/RepositoryName/分支名 或者使用cdn加速：https://cdn.jsdelivr.net/gh/用户名/RepositoryName 来加速</li>
+</ol>
+</blockquote>
+<p>————————————————————————————————————————————————————————————————————————————————</p>
+<h1 id="九、RSS订阅"><a href="#九、RSS订阅" class="headerlink" title="九、RSS订阅"></a>九、RSS订阅</h1><p>RSS(Really Simple Syndication) 简易信息聚合，是一种描述同步网站内容的格式(xml格式)，可以通过订阅RSS源在RSS阅读器上获取更新的信息。</p>
+<p>执行yarn或npm命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-generator-feed --save </span><br><span class="line">或</span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p>snippet/_config.yml文件添加：rss: /atom.xml</p>
+<br />
+
+<p>（完）</p>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+            转载声明：
+            商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">Snippet</a>
+            
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    <a href="/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/NET%E7%AC%94%E8%AE%B0/" class="pre-post btn btn-default" title='NET开发笔记'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            NET开发笔记</span>
+    </a>
+    
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E6%80%9D%E8%B7%AF"><span class="toc-text">### 搭建思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">### 写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%88%9B%E5%BB%BAtoken"><span class="toc-text">一、创建token</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%88%9B%E5%BB%BAhexo"><span class="toc-text">二、创建hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%88%9B%E5%BB%BArepository"><span class="toc-text">三、创建repository</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%88%9B%E5%BB%BAbranch"><span class="toc-text">四、创建branch</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E9%85%8D%E7%BD%AEtravis-CI"><span class="toc-text">五、配置travis CI</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E9%85%8D%E7%BD%AEtravis-yml"><span class="toc-text">六、配置travis.yml</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E6%96%B0%E5%BB%BAmd%E6%96%87%E7%AB%A0"><span class="toc-text">七、新建md文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E5%9B%BE%E5%BA%8A%E7%A5%9E%E5%99%A8PicGo"><span class="toc-text">八、图床神器PicGo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B9%9D%E3%80%81RSS%E8%AE%A2%E9%98%85"><span class="toc-text">九、RSS订阅</span></a></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+    访问量:
+    <strong id="busuanzi_value_site_pv">
+        <i class="fa fa-spinner fa-spin"></i>
+    </strong>
+    &nbsp; | &nbsp;
+    访客数:
+    <strong id="busuanzi_value_site_uv">
+        <i class="fa fa-spinner fa-spin"></i>
+    </strong>
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2020
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/app.js?rev=@@hash.js"></script>
+
+</body>
+</html>
